@@ -1,15 +1,25 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+[![Visits Badge](https://badges.pufler.dev/visits/zikazaki/zikazaki-folio)](https://github.com/zikazaki-folio)
+[![Twitter Badge](https://img.shields.io/badge/Twitter-Profile-informational?style=flat&logo=twitter&logoColor=white&color=1CA2F1)](https://twitter.com/ZikaZaki)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/zakariyaalkhamisisap)
+[![CodePen Badge](https://img.shields.io/badge/CodePen-Profile-informational?style=flat&logo=codepen&logoColor=white&color=black)](https://codepen.io/zikazaki)
 
 # ZikaZaki-Folio
 
 > This project is part of my **Microverse** exercises, where we start building professional personal-portfolio. This project follows the **Mobile First** approach, in order to make it prepared and responsive for different screen sizes. However, the goal here is to master and focus on best practices and professional **Simple, Visual, Thorough, & Looking-Good** shared traits.
 
+## Built With 🛠️
+
+- [x] Language: HTML & CSS
+- [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
+- [x] Code Editor: VS Code
+- [x] Figma [Template 3](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
 ## Built With
 
 - Languages: HTML & CSS.
 - Tools: Figma & VS Code.
 
-## Live Demo (if available)
+## Live Demo (not available yet)
 
 [Live Demo Link](#)
 
@@ -22,8 +32,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Install **Git** so you can manage your project.
-- Install **VS Code** so you can edit this project.
+- [x] **Google Chrome** or other web browser.
+- [x] **Git** version control system.
+- [x] **VS Code**  or other code editors.
 
 ### Setup
 
@@ -39,6 +50,14 @@ To get a local copy up and running follow these simple example steps.
 - Start customizing the project so it fits your personal preferences and needs.
 - Enjoy your new professional portfolio!
 
+### Run tests
+
+To check for linters, use the files provided by [Microverse](https://github.com/microverseinc/linters-config). A GitHub action is also set to run during pull request.
+
+```
+$ npm install
+```
+
 ## Authors
 
 👤 **Zakariya Al-Khamisi**
@@ -53,6 +72,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- [Microverse](https://www.microverse.org/)
+- Code Reviewers
+- Coding Partners
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
