@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ZikaZaki/zikazaki-folio/issues"
   },
-  "homepage": "https://github.com/ZikaZaki/zikazaki-folio#readme"
+  "homepage": "https://github.com/ZikaZaki/zikazaki-folio#readme",
+  "devDependencies": {
+    "hint": "^7.0.1"
+  }
 }
