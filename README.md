@@ -8,12 +8,13 @@
 
 > This project is part of my **Microverse** exercises, where we start building professional personal-portfolio. This project follows the **Mobile First** approach, in order to make it prepared and responsive for different screen sizes. However, the goal here is to master and focus on best practices and professional **Simple, Visual, Thorough, & Looking-Good** shared traits.
 
-## Built With 🛠️
+## Built With ⚙️
 
 - [x] Language: HTML & CSS
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
 - [x] Code Editor: VS Code
-- [x] Figma [Template 3](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=1%3A468)
+- [x] Figma [Template 1](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1)
+
 ## Built With
 
 - Languages: HTML & CSS.
