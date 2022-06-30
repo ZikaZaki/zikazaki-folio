@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 - [x] **Google Chrome** or other web browser.
 - [x] **Git** version control system.
-- [x] **VS Code**  or other code editors.
+- [x] **VS Code** or other code editors.
 
 ### Setup
 
