@@ -33,6 +33,14 @@ a {
   margin-right: 15px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
 svg {
   margin-right: 10px;
 }
