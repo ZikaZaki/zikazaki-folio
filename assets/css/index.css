@@ -232,7 +232,7 @@ svg {
   margin-top: 20px;
 }
 
-.action button p {
+.action button span {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
