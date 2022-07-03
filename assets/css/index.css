@@ -107,7 +107,6 @@ body {
   gap: 88px;
   width: 100%;
   height: 2788px;
-  left: 0px;
   top: 718px;
 }
 
@@ -178,14 +177,14 @@ body {
 
 .client-frame li {
   display: inline;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .client-frame #client-name {
-font-weight: 600;
-font-size: 13px;
-line-height: 16px;
-color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
 }
 
 .client-frame h4 {
@@ -194,15 +193,15 @@ color: #344563;
 }
 
 .client-frame span {
-  padding: 0px 16px;
+  padding: 0 16px;
 }
 
 .left-block .detail-txt {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #344563;  
-  padding: 0px;
+  color: #344563;
+  padding: 0;
 }
 
 .left-block .tags {
@@ -211,21 +210,6 @@ color: #344563;
   line-height: 16px;
   letter-spacing: 0.03em;
   padding: 16px 0;
-}
-
-.left-block .tags ul {
-  padding: 0;
-  list-style: none;
-}
-
-.left-block .tags li {
-  display: inline;
-  padding: 4px 12px;
-  margin-right: 10px;
-  color: #6070ff;
-  background: #ebebff;
-  border-radius: 8px;
-  list-style: none;
 }
 
 .action button {
@@ -253,7 +237,7 @@ color: #344563;
   align-items: flex-start;
   background-image: url("../img/about-myself-bg.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   padding: 114px 24px;
@@ -287,16 +271,36 @@ color: #344563;
 .skills-list ul {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
 }
 
 .skills-list li {
   list-style: none;
 }
 
+.lang-list ul {
+  gap: 12px;
+  padding: 12px;
+}
+
+.left-block .tags ul {
+  padding: 0;
+  list-style: none;
+}
+
+.left-block .tags li {
+  display: inline;
+  padding: 4px 12px;
+  margin-right: 10px;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  list-style: none;
+}
+
 .skills-list .main-frame {
   padding: 12px 12px;
-  border-bottom: 1px solid #dfe1e6; ;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .skills-list .frame-header {
@@ -313,8 +317,8 @@ color: #344563;
   font-size: 20px;
   line-height: 24px;
   height: 24px;
-  color: #000000;
-  }
+  color: #000;
+}
 
 .frame-header .normal-btn {
   align-items: flex-start;
@@ -329,11 +333,6 @@ color: #344563;
 
 .lang-list {
   width: 100%;
-}
-
-.lang-list ul {
-  gap: 12px ;
-  padding: 12px;
 }
 
 .lang-list-frame {
