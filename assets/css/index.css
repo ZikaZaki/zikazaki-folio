@@ -8,10 +8,6 @@ body {
   background: #f4f5f7;
 }
 
-svg {
-  /* margin-right: 10px; */
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -47,13 +43,6 @@ svg {
   border: none;
   background: #fff;
 }
-
-/* .normal-button i {
-  color: rgb(96, 112, 255);
-  font-size: 18px;
-  line-height: 20px;
-  margin-right: 15px;
-} */
 
 .headline {
   display: flex;
@@ -162,10 +151,8 @@ svg {
 .left-block {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
-  
 }
 
 .left-block #project-title {
@@ -187,7 +174,6 @@ svg {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-  /* padding-inline-start: 0; */
 }
 
 .client-frame li {
@@ -294,30 +280,23 @@ color: #344563;
 }
 
 .skills-list {
-  /* padding: 12px; */
   width: 100%;
   height: 464.15px;
   border: 1px solid #000000;
-  
 }
 
 .skills-list ul {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start;  */
   padding: 0px;
-  /* width: 100%; */
 }
 
 .skills-list li {
-  /* width: 100%; */
   list-style: none;
-  }
+}
 
-  .skills-list .main-frame {
- 
+.skills-list .main-frame {
   padding: 12px 12px;
-  /* width: 100%; */
   border-bottom: 1px solid #dfe1e6; ;
 }
 
@@ -325,12 +304,11 @@ color: #344563;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
   width: 100%;
 }
 
 .skills-list .header-txt {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -360,25 +338,25 @@ color: #344563;
 }
 
 .lang-list-frame {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 20px;
-width: 100%;
-height: 66.72px;
-background: #F7F7F9;
-border-radius: 8px;
-padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 .lang-list-frame img {
-width: 48px;
-height: 48px;
-border: 1px solid #FFFFFF;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
 }
 
 .lang-list-frame h3 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
