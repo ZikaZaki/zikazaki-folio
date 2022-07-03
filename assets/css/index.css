@@ -154,7 +154,7 @@ body {
   font-style: normal;
 }
 
-.left-block #project-title {
+.left-block .project-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -180,7 +180,7 @@ body {
   padding: 20px 0;
 }
 
-.client-frame #client-name {
+.client-frame .client-name {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
