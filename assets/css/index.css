@@ -59,7 +59,7 @@ body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   padding: 114px 24px;
-  background-image: url("../img/index-bg.png");
+  background-image: url("../img/headline-top-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -360,4 +360,46 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("../img/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 718px; */
+}
+
+.contact .content {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  padding: 114px 24px;
+  background-image: url("../img/contact-top-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  
+  /* width: 265px; */
+  margin-left: 100px;
+
+}
+
+.contact .primary-txt {
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.contact .detail-txt {
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
