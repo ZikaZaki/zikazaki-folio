@@ -471,9 +471,9 @@
         <section class="contact">
             <div class="content">
                 <div class="txt-holder">
-                    <h1 class="primary-txt">
+                    <h2 class="primary-txt">
                         Contact me
-                    </h1>
+                    </h2>
                     <p class="detail-txt">
                         If you have an application you
                         are interested in developing, a
@@ -487,13 +487,32 @@
                     <form action="https://formspree.io/f/xyyoqwwb" method="post">
                         <ul>
                             <li>
-                                <input type="text" placeholder="Write your name here"  name="user_name" id="name">
+                                <input 
+                                    type="text" 
+                                    placeholder="Write your name here" 
+                                    name="user_name" 
+                                    id="name" 
+                                    required
+                                    maxlength="30"
+                                />
                             </li>
                             <li>
-                                <input type="email" placeholder="Write your email here" name="user_email" id="mail">
+                                <input 
+                                    type="email" 
+                                    placeholder="Write your email here" 
+                                    name="user_email" 
+                                    id="mail"
+                                    required
+                                />
                             </li>
                             <li>
-                                <textarea placeholder="Write your message here" name="user_message" id="msg" ></textarea>
+                                <textarea 
+                                    placeholder="Write your message here" 
+                                    name="user_message" 
+                                    id="msg"
+                                    required
+                                    maxlength="500">
+                                </textarea>
                             </li>
                             <li>
                                 <button class="submit-btn" type="submit">Get in Touch</button>
