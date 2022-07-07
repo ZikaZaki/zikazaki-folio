@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -43,6 +43,9 @@ body {
   border: none;
   background: #fff;
 }
+.nav-links {
+  display: none;
+}
 
 .headline {
   display: flex;
@@ -56,12 +59,13 @@ body {
 }
 
 .headline .content {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   padding: 114px 24px;
   background-image: url("../img/headline-top-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .headline .primary-txt {
@@ -156,7 +160,7 @@ body {
 .left-block {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
 }
 
@@ -173,7 +177,7 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -227,7 +231,7 @@ body {
 }
 
 .action button span {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -244,7 +248,7 @@ body {
   background-image: url("../img/about-myself-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   padding: 114px 24px;
   margin-top: 275px;
@@ -326,7 +330,7 @@ body {
 }
 
 .skills-list .header-txt {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -369,7 +373,7 @@ body {
 }
 
 .lang-list-frame h3 {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -388,7 +392,7 @@ body {
 }
 
 .contact .content {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   background-image: url("../img/contact-top-bg.png");
   background-repeat: no-repeat;
@@ -418,7 +422,7 @@ body {
 }
 
 .contact-form input {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -431,7 +435,7 @@ body {
 }
 
 .contact-form textarea {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   padding: 15px;
   border: 1px solid #ccc;
@@ -445,7 +449,7 @@ body {
 }
 
 .contact-form .submit-btn {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -460,4 +464,14 @@ body {
   border-radius: 8px;
   border: none;
   background: #fff;
+}
+
+@media (min-width: 748px) {
+  .menu-btn {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
 }
