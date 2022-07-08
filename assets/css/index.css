@@ -22,7 +22,9 @@ body {
   width: 100%;
   height: 8vh;
   background: #fff;
-  box-shadow: 0 5px 5px -5px rgba(0,0,0,.2);
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+  padding: 14px 24px;
+  align-items: center;
 }
 
 .logo-placeholder a {
@@ -34,11 +36,6 @@ body {
   color: rgb(96, 112, 255);
   padding: 0;
   text-decoration: none;
-}
-
-.navbar {
-  padding: 14px 24px;
-  align-items: center;
 }
 
 .navbar .menu-btn {
@@ -383,7 +380,7 @@ body {
 }
 
 .contact {
-  background: #6070FF;
+  background: #6070ff;
   border-radius: 100px 0 0 0;
   width: 100%;
   height: 100%;
@@ -392,7 +389,6 @@ body {
   background-image: url("../img/contact-mobile-bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
-
 }
 
 .contact .content {
@@ -500,7 +496,7 @@ body {
     align-items: center;
     letter-spacing: 0.37px;
   }
-  
+
   .headline .detail-txt {
     padding-bottom: 12px;
     font-weight: 400;
@@ -520,7 +516,6 @@ body {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
-    align-items: center;
     color: #344563;
     display: flex;
     flex-direction: row;
@@ -543,7 +538,7 @@ body {
     display: flex;
     list-style: none;
   }
-  
+
   .nav-items li {
     margin-left: 32px;
   }
@@ -563,7 +558,7 @@ body {
     width: 100%;
     height: 100%;
   }
-  
+
   .card-works {
     display: flex;
     flex-direction: row;
@@ -574,7 +569,7 @@ body {
   .card-works-reverse {
     flex-direction: row-reverse;
   }
-  
+
   .snapshoot-portfolio {
     width: 100%;
     height: 100%;
@@ -593,7 +588,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
-  
+
   .about-myself .social-media {
     padding: 25px 0;
   }
@@ -623,7 +618,6 @@ body {
     font-style: normal;
     width: 100%;
     height: 100%;
-    
   }
 
   .contact .txt-holder {
@@ -632,16 +626,17 @@ body {
     justify-content: center;
     padding: 0 340px;
     width: 100%;
-  } 
+  }
 
   .contact .contact-form ul {
     display: flex;
     flex-direction: column;
     padding: 0 350px;
-    width:100%;
+    width: 100%;
     justify-content: center;
     align-self: center;
   }
+
   .contact .submit-btn {
     margin-left: 250px;
   }
