@@ -109,6 +109,9 @@ body {
   display: inline;
   padding-right: 16px;
 }
+.rotate-icons path:hover {
+  transform: rotate(10deg);
+}
 
 .works {
   display: grid;
@@ -466,9 +469,7 @@ body {
 
 /* ======Edi has to go here */
 
-
 /* ========Amir has to go here */
-
 
 @media (min-width: 748px) {
   .navbar {
