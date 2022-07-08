@@ -114,7 +114,8 @@ body {
   transform: rotate(10deg);
 }
 
-.snapshoot-portfolio:hover {transform: translateY(-1.2rem);
+.snapshoot-portfolio:hover {
+  transform: translateY(-1.2rem);
   transition: all 0.4s;
 }
 
@@ -471,10 +472,6 @@ body {
   border: none;
   background: #fff;
 }
-
-/* ======Edi has to go here */
-
-/* ========Amir has to go here */
 
 @media (min-width: 748px) {
   .navbar {
