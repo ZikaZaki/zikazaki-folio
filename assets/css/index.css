@@ -109,8 +109,13 @@ body {
   display: inline;
   padding-right: 16px;
 }
+
 .rotate-icons path:hover {
   transform: rotate(10deg);
+}
+
+.snapshoot-portfolio:hover {transform: translateY(-1.2rem);
+  transition: all 0.4s;
 }
 
 .works {
