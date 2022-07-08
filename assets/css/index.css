@@ -598,7 +598,7 @@ body {
   }
 
   .about-myself .action {
-    padding: 20px 0;
+    padding: 0;
   }
 
   .main-frame {
@@ -606,15 +606,15 @@ body {
     flex-direction: column;
   }
 
-  .lang-list ul {
-    padding: 0;
+  .lang-list {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
   }
-
-  .lang-list li {
-    display: inline;
-    /* padding: 4px 12px;
-    border-radius: 8px;
-    list-style: none; */
+  
+  .lang-list ul {
+    display: flex;
+    flex-direction: row;
   }
 
   .contact {
