@@ -571,8 +571,8 @@ body {
   }
 
   .snapshoot-portfolio {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
     padding-right: 6px;
   }
@@ -601,6 +601,22 @@ body {
     padding: 20px 0;
   }
 
+  .main-frame {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang-list ul {
+    padding: 0;
+  }
+
+  .lang-list li {
+    display: inline;
+    /* padding: 4px 12px;
+    border-radius: 8px;
+    list-style: none; */
+  }
+
   .contact {
     display: flex;
     flex-direction: column;
@@ -610,7 +626,7 @@ body {
     background-size: contain;
     align-items: center;
     height: 100%;
-    padding: 70px;
+    padding: 130px;
   }
 
   .contact .content {
@@ -638,6 +654,6 @@ body {
   }
 
   .contact .submit-btn {
-    margin-left: 250px;
+    margin-left: 200px;
   }
 }
