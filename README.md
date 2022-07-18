@@ -19,9 +19,9 @@
 - Languages: HTML & CSS.
 - Tools: Figma & VS Code.
 
-## Live Demo (not available yet)
+## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://zikazaki.github.io./)
 
 ## Getting Started
 
