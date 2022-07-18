@@ -19,7 +19,9 @@
 - Languages: HTML & CSS.
 - Tools: Figma & VS Code.
 
-## Live Demo
+## Live Demo (Deployed on GitHub Pages)
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blueviolet)](https://zikazaki.github.io/)
 
 [Live Demo Link](https://zikazaki.github.io./)
 
