@@ -72,6 +72,7 @@ body {
   background-image: url("../img/headline-mobile-bg.png");
   background-repeat: no-repeat;
   background-size: calc(100%);
+  background-attachment: scroll;
   width: 100%;
   height: 100%;
 }
@@ -402,6 +403,7 @@ body {
   background-image: url("../img/contact-mobile-bg.png");
   background-repeat: no-repeat;
   background-position-x: right;
+  background-attachment: scroll;
 }
 
 .contact .content {
