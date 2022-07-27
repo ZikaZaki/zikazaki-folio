@@ -7,22 +7,28 @@ function toggleMenu(menu){
     } 
 }
 
-var myBlurFunction = function (state) {
-    var blurElements = [document.getElementById('main-continer'), document.getElementById('logo'),
-docuement.getElementById('desktop-navbar')];
+var myBlurFunction = function(state) {
+    /* state can be 1 or 0 */
+    var blurElements = [document.getElementById('main'),document.getElementById('logo')];
 
-if (state){
-    blurElements.forEach(e=>{
-        e.classList.add('blur');
-    });
+    if (state) {
+        blurElements.forEach(e => {
+            e.classList.add('blur');
+        });
 
-    document.getElementById('bar1').style.backgroundImage='#fff';
-}else{
-    blurElements.forEach(e=>{
-        e.classList.remove('blur');
-    });
-}
-}
+        //Setting the background-color of the close icon to white    
+        document.getElementById('bar1').style.backgroundColor='#fff';
+        document.getElementById('bar3').style.backgroundColor='#fff';
+    } else {
+        blurElements.forEach(e => {
+            e.classList.remove('blur');
+        });
+
+        //Resetting the background-color of the close icon to its original color
+        document.getElementById('bar1').style.backgroundColor='#3a4adb';
+        document.getElementById('bar3').style.backgroundColor='#3a4adb';
+    }
+};
 // const close_icon = document.getElementById('hamburger-icon');
 // close_icon.onclick = () => {
 //     close_icon.style.backgroundColor = '#fff';
