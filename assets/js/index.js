@@ -6,6 +6,23 @@ function toggleMenu(menu){
         myBlurFunction(0);
     } 
 }
+
+var myBlurFunction = function (state) {
+    var blurElements = [document.getElementById('main-continer'), document.getElementById('logo'),
+docuement.getElementById('desktop-navbar')];
+
+if (state){
+    blurElements.forEach(e=>{
+        e.classList.add('blur');
+    });
+
+    document.getElementById('bar1').style.backgroundImage='#fff';
+}else{
+    blurElements.forEach(e=>{
+        e.classList.remove('blur');
+    });
+}
+}
 // const close_icon = document.getElementById('hamburger-icon');
 // close_icon.onclick = () => {
 //     close_icon.style.backgroundColor = '#fff';
