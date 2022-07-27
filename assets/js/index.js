@@ -1,32 +1,32 @@
 const myBlurFunction = function (state) {
   /* state can be 1 or 0 */
   const blurElements = [
-    document.getElementById('main'),
-    document.getElementById('logo'),
+    document.getElementById("main"),
+    document.getElementById("logo"),
   ];
 
   if (state) {
     blurElements.forEach((e) => {
-      e.classList.add('blur');
+      e.classList.add("blur");
     });
 
     // Setting the background-color of the close icon to white
-    document.getElementById('bar1').style.backgroundColor = '#fff';
-    document.getElementById('bar3').style.backgroundColor = '#fff';
+    document.getElementById("bar1").style.backgroundColor = "#fff";
+    document.getElementById("bar3").style.backgroundColor = "#fff";
   } else {
     blurElements.forEach((e) => {
-      e.classList.remove('blur');
+      e.classList.remove("blur");
     });
 
     // Resetting the background-color of the close icon to its original color
-    document.getElementById('bar1').style.backgroundColor = '#3a4adb';
-    document.getElementById('bar3').style.backgroundColor = '#3a4adb';
+    document.getElementById("bar1").style.backgroundColor = "#3a4adb";
+    document.getElementById("bar3").style.backgroundColor = "#3a4adb";
   }
 };
 
 const toggleMenu = function (menu) {
-  menu.classList.toggle('open');
-  if (menu.classList.contains('open')) {
+  menu.classList.toggle("open");
+  if (menu.classList.contains("open")) {
     myBlurFunction(1);
   } else {
     myBlurFunction(0);
