@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <title>ZikaZaki-Folio</title>
+    <title>ZikaZaki-Portfolio</title>
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
-        <div class="logo-placeholder">
+        <div id="logo" class="logo-placeholder">
           <a href="#">My Logo</a>
         </div>
-        <button class="menu-btn">
+        <div class="nav-items">
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMenu(this)">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+          <ul class="mobile-menu">
+              <li> <a href="#">Portfolio</a></li>
+              <li> <a href="#">About</a></li>
+              <li> <a href="#">Contact</a></li>
+          </ul>
+      </div>
+        <!-- <button class="menu-btn">
           <svg
             width="24"
             height="24"
@@ -36,17 +45,10 @@
               fill="#6070FF"
             />
           </svg>
-        </button>
-        <div class="nav-items">
-          <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+        </button> -->
       </nav>
     </header>
-    <main>
+    <main id="main">
       <section class="headline">
         <div class="content">
           <div class="txt-holder">
@@ -718,5 +720,6 @@
         </div>
       </section>
     </main>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

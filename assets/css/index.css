@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +7,8 @@
 }
 
 body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
   background: #e5e5e5;
 }
 
@@ -14,22 +18,24 @@ body {
   z-index: 999;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
   width: 100%;
   height: 8vh;
   background: #fff;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
-  padding: 14px 24px;
-  align-items: center;
+  padding: 0 20px;
 }
 
 .logo-placeholder a {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -39,58 +45,34 @@ body {
   text-decoration: none;
 }
 
-.navbar .menu-btn {
-  align-items: flex-start;
-  width: 35px;
-  height: 35px;
-  margin: 0;
-  border-radius: 8px;
-  border: none;
-  background: #fff;
-}
-
 .nav-items {
   display: none;
 }
 
-.headline {
-  display: flex;
-  flex-direction: column;
+/* .navbar .menu-btn {
   align-items: flex-start;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
   background: #fff;
-  border-radius: 0 0 0 100px;
-  width: 100%;
-  height: 100%;
-  padding-top: 4rem;
-  position: relative;
+} */
+
+#hamburger-icon {
+  display: block;
+  margin: auto 0;
+  cursor: pointer;
+  z-index: 999;
 }
 
-.headline .content {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  padding: 114px 24px;
-  background-image: url("../img/headline-mobile-bg.png");
-  background-repeat: no-repeat;
-  background-size: calc(100%);
-  background-attachment: scroll;
-  width: 100%;
-  height: 100%;
-}
-
-.headline .primary-txt {
-  padding-bottom: 12px;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: #172b4d;
-}
-
-.headline .detail-txt {
-  padding-bottom: 12px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
+.bar {
+  width: 35px;
+  height: 3px;
+  background-color: #3a4adb;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 
 .social-media a {
@@ -113,6 +95,123 @@ body {
   padding-right: 16px;
 }
 
+.client-frame li {
+  display: inline;
+  padding: 20px 0;
+}
+
+.skills-list li {
+  list-style: none;
+}
+
+.contact-form li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* height: calc(100vh - 50px); */
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile-menu a {
+  /* color: rgb(58, 74, 219); */
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.mobile-menu li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #6070ff;
+  mix-blend-mode: normal;
+  opacity: 90%;
+  position: fixed;
+  gap: 25px;
+  padding: 70px 0 0 20px;
+  z-index: -1;
+}
+
+.open #bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open #bar2 {
+  opacity: 0;
+}
+
+.open #bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px); */
+}
+
+/* ==========================================Finished Header Section====================================== */
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 0 0 0 100px;
+  width: 100%;
+  height: 100%;
+  padding: 200px 20px 300px 40px;
+  background-image: url("../img/headline-mobile-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: 50px;
+  background-attachment: scroll;
+  position: relative;
+}
+
+.headline .content {
+  width: 100%;
+  height: 100%;
+}
+
+.headline .primary-txt {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.headline .detail-txt {
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 .rotate-icons path:hover {
   transform: rotate(10deg);
 }
@@ -121,18 +220,18 @@ body {
   display: grid;
   grid-template-rows: repeat(4, 25%);
   align-items: center;
-  padding: 114px 24px;
-  gap: 88px;
+  padding: 115px 25px;
+  gap: 85px;
   width: 100%;
-  height: 2788px;
+  height: 100%;
 }
 
 .card-works {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  gap: 12px;
+  padding: 25px;
+  gap: 15px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -140,7 +239,7 @@ body {
 
 .snapshoot-portfolio {
   width: 100%;
-  height: 220px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -151,15 +250,15 @@ body {
 }
 
 .snapshoot-portfolio:hover {
-  transform: translateY(-1.2rem);
-  transition: all 0.4s;
+  /* transform: translateY(-1.2rem);
+  transition: all 0.4s; */
+  transform: scale(1.06);
+  transition: 0.4s;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
 }
 
 .left-block .project-title {
@@ -175,18 +274,11 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #737578;
   background-color: #fff;
-}
-
-.client-frame li {
-  display: inline;
-  padding: 20px 0;
 }
 
 .client-frame .client-name {
@@ -223,8 +315,6 @@ body {
 }
 
 .action button {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -244,8 +334,6 @@ body {
 }
 
 .action button span {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -254,14 +342,14 @@ body {
   color: #396df2;
 }
 
+/* ==========================================Finished Works Section====================================== */
+
 .about-myself {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background: #fff;
   border-radius: 0 100px 0 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   padding: 114px 24px;
   margin-top: 275px;
   gap: 24px;
@@ -296,10 +384,6 @@ body {
   padding: 0;
 }
 
-.skills-list li {
-  list-style: none;
-}
-
 .lang-list ul {
   gap: 12px;
   padding: 12px;
@@ -313,10 +397,6 @@ body {
 .left-block .tags ul {
   padding: 0;
   list-style: none;
-}
-
-.contact-form li {
-  margin-bottom: 20px;
 }
 
 .left-block .tags li {
@@ -342,8 +422,6 @@ body {
 }
 
 .skills-list .header-txt {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -385,8 +463,6 @@ body {
 }
 
 .lang-list-frame h3 {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
@@ -407,8 +483,6 @@ body {
 }
 
 .contact .content {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   width: 100%;
   height: 100%;
   padding: 82px 24px;
@@ -435,8 +509,6 @@ body {
 }
 
 .contact-form input {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -448,8 +520,6 @@ body {
 }
 
 .contact-form textarea {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -461,8 +531,6 @@ body {
 }
 
 .contact-form .submit-btn {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -471,16 +539,52 @@ body {
   color: rgb(58, 74, 219);
   background-color: #fff;
   align-items: flex-start;
-  padding: 12px, 16px, 12px, 16px;
+  padding: 12px;
   width: 140px;
   height: 48px;
   border-radius: 8px;
   border: none;
 }
 
-@media (min-width: 748px) {
+@media screen and (min-width: 748px) {
   .navbar {
-    padding: 0 155px;
+    padding: 0 150px;
+  }
+
+  .nav-items {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+  }
+
+  .nav-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+  }
+
+  .nav-items li {
+    margin-left: 30px;
+  }
+
+  .nav-items a {
+    text-decoration: none;
+  }
+
+  .nav-items a:hover {
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #6070ff;
+    color: white;
+  }
+
+  #hamburger-icon {
+    display: none;
   }
 
   .headline {
@@ -517,44 +621,6 @@ body {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
-  }
-
-  .menu-btn {
-    display: none;
-  }
-
-  .nav-items {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: #344563;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  .nav-items a {
-    text-decoration: none;
-  }
-
-  .nav-items a:hover {
-    border-radius: 8px;
-    padding: 8px;
-    background-color: #6070ff;
-    color: white;
-  }
-
-  .nav-items ul {
-    display: flex;
-    list-style: none;
-  }
-
-  .nav-items li {
-    margin-left: 32px;
   }
 
   .social-media {
@@ -644,8 +710,6 @@ body {
   }
 
   .contact .content {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
     width: 100%;
     height: 100%;
   }
