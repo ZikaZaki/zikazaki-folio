@@ -49,17 +49,6 @@ body {
   display: none;
 }
 
-/* .navbar .menu-btn {
-  align-items: flex-start;
-  width: 35px;
-  height: 35px;
-  margin: 0;
-  padding: 0;
-  border-radius: 8px;
-  border: none;
-  background: #fff;
-} */
-
 #hamburger-icon {
   display: block;
   margin: auto 0;
@@ -113,15 +102,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
-  /* height: calc(100vh - 50px); */
   list-style: none;
   height: 100%;
   width: 100%;
 }
 
 .mobile-menu a {
-  /* color: rgb(58, 74, 219); */
   color: #fff;
   font-size: 32px;
   font-weight: 600;
@@ -164,7 +150,6 @@ body {
 .blur {
   filter: blur(5px);
   -webkit-filter: blur(5px);
-
   /* -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px); */
@@ -247,11 +232,10 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  padding: 12px 16px;
 }
 
 .snapshoot-portfolio:hover {
-  /* transform: translateY(-1.2rem);
-  transition: all 0.4s; */
   transform: scale(1.06);
   transition: 0.4s;
 }
@@ -263,22 +247,27 @@ body {
 
 .left-block .project-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 44px;
   color: #172b4d;
-  padding-top: 12px;
+  padding: 0 15px;
 }
 
 .client-frame ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0;
+  padding: 0 20px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #737578;
   background-color: #fff;
+}
+
+.solid-circle {
+  font-size: 20px;
+  color: rgb(209, 209, 209);
 }
 
 .client-frame .client-name {
@@ -303,15 +292,24 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  padding: 0;
+  padding: 12px 16px;
 }
 
-.left-block .tags {
+.tags {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  padding: 16px 0;
+  padding: 15px;
+}
+
+.action{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  gap: 25px;
 }
 
 .action button {
@@ -319,13 +317,15 @@ body {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  vertical-align: baseline;
   letter-spacing: 0.03em;
   color: #396df2;
-  padding: 12px;
+  padding: 15px;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  margin: 12px 0;
+  margin-top: 20px;
+  height: 50px;
 }
 
 .action button:hover {
@@ -333,16 +333,168 @@ body {
   color: #fff;
 }
 
-.action button span {
+/* ====================================================Finished Works Section================================================== */
+
+/* =============================================Details Popup Window Starts Here=============================================== */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: inline-block;
+  position: fixed;
+  overflow: auto;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%, 0);
+  width: 90%;
+  height: 95vh;
+  border-radius: 16px;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.popup-snapshoot-portfolio {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.popup-snapshoot-portfolio img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px;
+}
+
+.popup-snapshoot-portfolio:hover {
+  transform: scale(1.06);
+  transition: 0.4s;
+}
+
+.popup-client-frame li {
+  display: inline;
+  padding: 20px 0;
+}
+
+.popup-client-frame ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #737578;
+  background-color: #fff;
+}
+
+.popup-client-name {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  background-color: #fff;
+}
+
+.popup-client-frame h3 {
+  padding: 0;
+  display: inline;
+}
+
+.popup-client-frame span {
+  padding: 0 16px;
+}
+
+.popup-project-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 0 15px;
+}
+
+.popup-detail-txt {
+  font-weight: 400;
+  font-size: 18px;
+  color: #344563;
+  padding: 12px 16px;
+}
+
+.popup-tags {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 15px;
+}
+
+.popup-tags li {
+  display: inline;
+  padding: 5px 12px;
+  margin-right: 10px;
+  color: rgb(58, 74, 219);
+  background: #dedee4;
+  border-radius: 8px;
+  list-style: none;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-action{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  gap: 25px;
+}
+
+.popup-action button {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+  vertical-align: baseline;
   letter-spacing: 0.03em;
   color: #396df2;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 50px;
 }
 
-/* ==========================================Finished Works Section====================================== */
+.popup-action button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+/* =============================================Details Popup Window Ends Here=============================================== */
 
 .about-myself {
   display: flex;
@@ -394,14 +546,9 @@ body {
   padding: 0;
 }
 
-.left-block .tags ul {
-  padding: 0;
-  list-style: none;
-}
-
-.left-block .tags li {
+.tags li {
   display: inline;
-  padding: 4px 12px;
+  padding: 5px 12px;
   margin-right: 10px;
   color: rgb(58, 74, 219);
   background: #dedee4;
@@ -643,7 +790,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 24px;
+    padding: 25px;
   }
 
   .card-works-reverse {
@@ -660,6 +807,44 @@ body {
   .left-block {
     padding-left: 6px;
   }
+
+/* ============================Start of Desktop-Details Popup Window======================= */
+
+.modal-content {
+  padding: 40px 60px;
+}
+
+.popup-snapshoot-portfolio {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 50px;
+  border: 3px solid rgb(195, 193, 193);
+}
+
+.popup-snapshoot-portfolio img {
+  width: 80rem;
+  height: 40rem;
+  border-radius: 50px;
+  border: 1px solid rgb(195, 193, 193);
+}
+
+.popup-snapshoot-portfolio:hover {
+  transform: scale(1);
+}
+
+.popup-description-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 45px 5px;
+  align-items:  center;
+}
+
+.popup-project-title {
+  padding: 5px 20px;
+}
+
+/* ============================End of Desktop-Details Popup Window======================= */
 
   .about-myself {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
