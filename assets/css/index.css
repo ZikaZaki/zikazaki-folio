@@ -97,6 +97,21 @@ body {
   margin-bottom: 20px;
 }
 
+.popup-client-frame li {
+  display: inline;
+  padding: 20px 0;
+}
+
+.popup-tags li {
+  display: inline;
+  padding: 5px 12px;
+  margin-right: 10px;
+  color: rgb(58, 74, 219);
+  background: #dedee4;
+  border-radius: 8px;
+  list-style: none;
+}
+
 .mobile-menu {
   display: none;
   position: fixed;
@@ -112,6 +127,16 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
+}
+
+.tags li {
+  display: inline;
+  padding: 5px 12px;
+  margin-right: 10px;
+  color: rgb(58, 74, 219);
+  background: #dedee4;
+  border-radius: 8px;
+  list-style: none;
 }
 
 .mobile-menu li:hover {
@@ -150,6 +175,7 @@ body {
 .blur {
   filter: blur(5px);
   -webkit-filter: blur(5px);
+
   /* -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px); */
@@ -303,7 +329,23 @@ body {
   padding: 15px;
 }
 
-.action{
+.popup-action button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: baseline;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.action {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -345,9 +387,10 @@ body {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+
   /* overflow: auto; Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -381,11 +424,6 @@ body {
 .popup-snapshoot-portfolio:hover {
   transform: scale(1.06);
   transition: 0.4s;
-}
-
-.popup-client-frame li {
-  display: inline;
-  padding: 20px 0;
 }
 
 .popup-client-frame ul {
@@ -440,16 +478,6 @@ body {
   padding: 15px;
 }
 
-.popup-tags li {
-  display: inline;
-  padding: 5px 12px;
-  margin-right: 10px;
-  color: rgb(58, 74, 219);
-  background: #dedee4;
-  border-radius: 8px;
-  list-style: none;
-}
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -465,7 +493,7 @@ body {
   cursor: pointer;
 }
 
-.popup-action{
+.popup-action {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -474,26 +502,11 @@ body {
   gap: 25px;
 }
 
-.popup-action button {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  vertical-align: baseline;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  padding: 15px;
-  background-color: #fff;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: 20px;
-  height: 50px;
-}
-
 .popup-action button:hover {
   background-color: #6070ff;
   color: #fff;
 }
+
 /* =============================================Details Popup Window Ends Here=============================================== */
 
 .about-myself {
@@ -544,16 +557,6 @@ body {
 .contact-form ul {
   list-style: none;
   padding: 0;
-}
-
-.tags li {
-  display: inline;
-  padding: 5px 12px;
-  margin-right: 10px;
-  color: rgb(58, 74, 219);
-  background: #dedee4;
-  border-radius: 8px;
-  list-style: none;
 }
 
 .skills-list .main-frame {
@@ -808,43 +811,43 @@ body {
     padding-left: 6px;
   }
 
-/* ============================Start of Desktop-Details Popup Window======================= */
+  /* ============================Start of Desktop-Details Popup Window======================= */
 
-.modal-content {
-  padding: 40px 60px;
-}
+  .modal-content {
+    padding: 40px 60px;
+  }
 
-.popup-snapshoot-portfolio {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  border-radius: 50px;
-  border: 3px solid rgb(195, 193, 193);
-}
+  .popup-snapshoot-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    border: 3px solid rgb(195, 193, 193);
+  }
 
-.popup-snapshoot-portfolio img {
-  width: 80rem;
-  height: 40rem;
-  border-radius: 50px;
-  border: 1px solid rgb(195, 193, 193);
-}
+  .popup-snapshoot-portfolio img {
+    width: 80rem;
+    height: 40rem;
+    border-radius: 50px;
+    border: 1px solid rgb(195, 193, 193);
+  }
 
-.popup-snapshoot-portfolio:hover {
-  transform: scale(1);
-}
+  .popup-snapshoot-portfolio:hover {
+    transform: scale(1);
+  }
 
-.popup-description-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  padding: 45px 5px;
-  align-items:  center;
-}
+  .popup-description-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 45px 5px;
+    align-items: center;
+  }
 
-.popup-project-title {
-  padding: 5px 20px;
-}
+  .popup-project-title {
+    padding: 5px 20px;
+  }
 
-/* ============================End of Desktop-Details Popup Window======================= */
+  /* ============================End of Desktop-Details Popup Window======================= */
 
   .about-myself {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
