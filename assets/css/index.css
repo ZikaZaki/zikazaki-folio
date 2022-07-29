@@ -516,11 +516,12 @@ body {
   background: #fff;
   border-radius: 0 100px 0 0;
   padding: 114px 24px;
-  margin-top: 275px;
+  margin-top: 175px;
   gap: 24px;
   width: 100%;
   position: relative;
-  height: 1125.15px;
+
+  /* height: 1125.15px; */
 }
 
 .about-myself .primary-txt {
@@ -855,6 +856,7 @@ body {
     padding: 142px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    margin-top: 100px;
   }
 
   .about-myself .social-media {
