@@ -1,70 +1,71 @@
-//= ==========================PROJECTS-CARDS DATA==================================//
+//= ==========================PROJECTS-CARDS
+//DATA==================================//
 const projectsData = [
   {
-    name: 'Tonic',
-    client: 'CANOPY',
-    id: 1,
-    year: 2015,
-    image: '/assets/img/snapshoot-protfolio-1.png',
-    technologies: ['html', 'css', 'javascript'],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveVersion: 'https://zikazaki.github.io/zikazaki-folio/',
-    source: 'https://github.com/ZikaZaki/zikazaki-folio',
+    name : 'Tonic',
+    client : 'CANOPY',
+    id : 1,
+    year : 2015,
+    image : '/assets/img/snapshoot-protfolio-1.png',
+    technologies : [ 'html', 'css', 'javascript' ],
+    description :
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " +
+            'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem ' +
+            'Ipsum is simply dummy text of the printing and typesetting industry.',
+    liveVersion : 'https://zikazaki.github.io/zikazaki-folio/',
+    source : 'https://github.com/ZikaZaki/zikazaki-folio',
   },
   {
-    name: 'Multi post Stories',
-    client: 'CANOPY',
-    id: 2,
-    year: 2020,
-    image: '/assets/img/snapshoot-protfolio-2.png',
-    technologies: ['html', 'css', 'javascript'],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveVersion: 'https://zikazaki.github.io/zikazaki-folio/',
-    source: 'https://github.com/ZikaZaki/zikazaki-folio',
-  },
-
-  {
-    name: 'Tonic',
-    client: 'CANOPY',
-    year: 2019,
-    id: 3,
-    image: '/assets/img/snapshoot-protfolio-3.png',
-    technologies: ['html', 'css', 'javascript'],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveVersion: 'https://zikazaki.github.io/zikazaki-folio/',
-    source: 'https://github.com/ZikaZaki/zikazaki-folio',
+    name : 'Multi post Stories',
+    client : 'CANOPY',
+    id : 2,
+    year : 2020,
+    image : '/assets/img/snapshoot-protfolio-2.png',
+    technologies : [ 'html', 'css', 'javascript' ],
+    description :
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " +
+            'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem ' +
+            'Ipsum is simply dummy text of the printing and typesetting industry.',
+    liveVersion : 'https://zikazaki.github.io/zikazaki-folio/',
+    source : 'https://github.com/ZikaZaki/zikazaki-folio',
   },
 
   {
-    name: 'Multi post Stories',
-    client: 'CANOPY',
-    year: 2020,
-    id: 4,
-    image: '/assets/img/snapshoot-protfolio-4.png',
-    technologies: ['html', 'css', 'javascript'],
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-      + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, "
-      + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem '
-      + 'Ipsum is simply dummy text of the printing and typesetting industry.',
-    liveVersion: 'https://zikazaki.github.io/zikazaki-folio/',
-    source: 'https://github.com/ZikaZaki/zikazaki-folio',
+    name : 'Tonic',
+    client : 'CANOPY',
+    year : 2019,
+    id : 3,
+    image : '/assets/img/snapshoot-protfolio-3.png',
+    technologies : [ 'html', 'css', 'javascript' ],
+    description :
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " +
+            'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem ' +
+            'Ipsum is simply dummy text of the printing and typesetting industry.',
+    liveVersion : 'https://zikazaki.github.io/zikazaki-folio/',
+    source : 'https://github.com/ZikaZaki/zikazaki-folio',
+  },
+
+  {
+    name : 'Multi post Stories',
+    client : 'CANOPY',
+    year : 2020,
+    id : 4,
+    image : '/assets/img/snapshoot-protfolio-4.png',
+    technologies : [ 'html', 'css', 'javascript' ],
+    description :
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
+            "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, " +
+            'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem ' +
+            'Ipsum is simply dummy text of the printing and typesetting industry.',
+    liveVersion : 'https://zikazaki.github.io/zikazaki-folio/',
+    source : 'https://github.com/ZikaZaki/zikazaki-folio',
   },
 ];
 
-const myBlurFunction = function (state) {
+const myBlurFunction = function(state) {
   /* state can be 1='blur' or 0='no blur' */
   const blurElements = [
     document.getElementById('main'),
@@ -72,17 +73,13 @@ const myBlurFunction = function (state) {
   ];
 
   if (state) {
-    blurElements.forEach((e) => {
-      e.classList.add('blur');
-    });
+    blurElements.forEach((e) => { e.classList.add('blur'); });
 
     // Setting the background-color of the close icon to white
     document.getElementById('bar1').style.backgroundColor = '#fff';
     document.getElementById('bar3').style.backgroundColor = '#fff';
   } else {
-    blurElements.forEach((e) => {
-      e.classList.remove('blur');
-    });
+    blurElements.forEach((e) => { e.classList.remove('blur'); });
 
     // Resetting the background-color of the close icon to its original color
     document.getElementById('bar1').style.backgroundColor = '#3a4adb';
@@ -90,7 +87,7 @@ const myBlurFunction = function (state) {
   }
 };
 
-const toggleMenu = function (menu) {
+const toggleMenu = function(menu) {
   menu.classList.toggle('open');
   if (menu.classList.contains('open')) {
     myBlurFunction(1);
@@ -99,8 +96,9 @@ const toggleMenu = function (menu) {
   }
 };
 
-//= ==============================DETAILS POPUP==================================//
-//= =========GLOBAL VARIABLES====================//
+//= ==============================DETAILS
+//POPUP==================================// = =========GLOBAL
+//VARIABLES====================//
 // Get the modal_content div
 const popupProjectCard = document.getElementById('popupProjectCard');
 function createProjectCard(pid) {
@@ -155,7 +153,8 @@ function createProjectCard(pid) {
   const imgPortfolio = document.createElement('div');
   imgPortfolio.classList.add('popup-snapshoot-portfolio');
   const img = document.createElement('img');
-  img.setAttribute('src', projectsData[pid].image, 'alt', `project${pid + 1}image`);
+  img.setAttribute('src', projectsData[pid].image, 'alt',
+                   `project${pid + 1}image`);
   imgPortfolio.appendChild(img);
   popupProjectCard.appendChild(imgPortfolio);
   /* ADD DESCRIPTION & ACTION-BUTTONS & TAGS CONTAINER */
@@ -192,7 +191,8 @@ function createProjectCard(pid) {
   const aLive = document.createElement('a');
   aLive.href = projectsData[pid].liveVersion;
   const btnLive = document.createElement('button');
-  btnLive.innerHTML = 'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+  btnLive.innerHTML =
+      'See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>';
   aLive.appendChild(btnLive);
   popupAction.appendChild(aLive);
   const aSource = document.createElement('a');
@@ -217,7 +217,7 @@ function popupDetails(projId) {
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName('close')[0];
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+span.onclick = function() {
   modal.style.display = 'none';
   // This while removes all the CARD child-elements.
   while (popupProjectCard.firstChild) {
@@ -226,7 +226,7 @@ span.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target === modal) {
     modal.style.display = 'none';
     // This while removes all the CARD child-elements.
