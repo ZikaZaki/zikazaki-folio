@@ -1,4 +1,5 @@
-const validRegex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+const validRegex =
+    /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 const email = document.forms.contactForm.userEmail;
 const emailErrMsg = document.getElementById('emailErrMsg');
 const contactSubmitBtn = document.forms.contactForm.submitBtn;
@@ -20,7 +21,8 @@ contactSubmitBtn.addEventListener('click', (event) => {
 //    }
 // });
 
-// document.getElementById('contactSubmitBtn').addEventListener('click', (event) => {
+// document.getElementById('contactSubmitBtn').addEventListener('click', (event)
+// => {
 //    const email = document.getElementById('email').value;
 //    const errorMsg = document.getElementById('errorMsg');
 
