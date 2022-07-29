@@ -596,10 +596,11 @@
           </div>
 
           <div class="contact-form">
-            <form action="https://formspree.io/f/xyyoqwwb" method="post">
+            <form name="contactForm" action="https://formspree.io/f/xyyoqwwb" method="post">
               <ul>
                 <li>
-                  <label for="name" hidden>Name</label><input
+                  <label for="name" hidden>Name</label>
+                  <input
                     type="text"
                     placeholder="Write your name here"
                     name="user_name"
@@ -609,16 +610,19 @@
                   />
                 </li>
                 <li>
-                  <label for="mail" hidden>Email</label><input
+                  <label for="mail" hidden>Email</label>
+                  <input
                     type="email"
-                    placeholder="Write your email here"
-                    name="user_email"
-                    id="mail"
+                    placeholder="Write your email address here"
+                    name="userEmail"
+                    id="email"
                     required
                   />
+                  <div id="emailErrMsg" class="errorMsg"></div>
                 </li>
                 <li>
-                  <label for="msg" hidden>Message</label><textarea
+                  <label for="msg" hidden>Message</label>
+                  <textarea
                     placeholder="Write your message here"
                     name="user_message"
                     id="msg"
@@ -628,9 +632,10 @@
                   </textarea>
                 </li>
                 <li>
-                  <button class="submit-btn" type="submit">Get in Touch</button>
+                  <button type="submit" name="submitBtn" id="contactSubmitBtn" class="submit-btn">Get in Touch</button>
                 </li>
               </ul>
+              
             </form>
           </div>
         </div>
