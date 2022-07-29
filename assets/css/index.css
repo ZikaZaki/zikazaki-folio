@@ -700,6 +700,7 @@ body {
 .errorMsg {
   color: rgb(239, 129, 136);
   font-size: 1.3rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 748px) {
