@@ -25,6 +25,14 @@
 
 [Live Demo Link](https://zikazaki.github.io/zikazaki-folio/)
 
+## Mobile-Screenshots
+
+![Photo_image](/assets/img/mobile-screenshot.png)
+
+## Desktop-Screenshots
+
+![Photo_image](/assets/img/desktop-screenshot.png)
+
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
